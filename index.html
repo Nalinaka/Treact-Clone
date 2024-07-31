@@ -1,55 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Treact</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
-     <script src="index.js"></script>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Treact</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous">
+        </script>
+        <script src="index.js"></script>
 </head>
-<body>
+    <body>
         <section id="landing">
             <nav>
-                <div class="row">
-                <div class="nav_container">
-                <img class="logo" src="./assets/Screenshot 2024-07-28 190607.gif" alt="logo">
-                <ul class="nav__links">
-                    <li><a href="#" class="nav__link">About</a></li>
-                    <li><a href="#" class="nav__link">Blog</a></li>
-                    <li><a href="#" class="nav__link">Pricing</a></li>
-                    <li><a href="#" class="nav__link">Contact Us</a></li>
-                    <li><a href="#" class="nav__link">Login</a></li>
-                    <li><a href="#" class="nav__link nav__link--primary">Sign Up</a></li>
+                <!-- <div class="row"> -->
+                    <div class="nav_container">
+                    <img class="logo" src="./assets/Screenshot 2024-07-28 190607.gif" alt="logo">
+                    <ul class="nav__links">
+                            <li><a href="#" class="nav__link">About</a></li>
+                            <li><a href="#" class="nav__link">Blog</a></li>
+                            <li><a href="#" class="nav__link">Pricing</a></li>
+                            <li><a href="#" class="nav__link">Contact Us</a></li>
+                            <li><a href="#" class="nav__link">Login</a></li>
+                            <li><a href="#" class="nav__link nav__link--primary">Sign Up</a></li>
                 </ul>
-                <button class="btn__menu" onclick="openMenu()">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="menu__backdrop">
-                    <button class="btn__menu btn__menu--close" onclick="closeMenu()"> 
-                    <i class="fas fa-times"></i>
+                        <button class="btn__menu" onclick="openMenu()">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                        <div class="menu__backdrop">
+                        <button class="btn__menu btn__menu--close" onclick="closeMenu()"> 
+                            <i class="fas fa-times"></i>
                     </button>  
-                    <ul class="menu__links">
+                        <ul class="menu__links">
+                            <li class="menu__list">
+                            <a href="#" class="menu__link" onclick="closeMenu()">About</a>
+                        </li>
+                            <li class="menu__list">
+                            <a href="#" class="menu__link" onclick="closeMenu()">Blog</a>
+                        </li>
+                            <li class="menu__list">
+                            <a href="#" class="menu__link" onclick="closeMenu()">Pricing</a>
+                        </li>
+                            <li class="menu__list">
+                            <a href="#" class="menu__link" onclick="closeMenu()">Contact Us</a>
+                        </li>
+                            <li class="menu__list">
+                            <a href="#" class="menu__link" onclick="closeMenu()">Login</a>
+                        </li>
                         <li class="menu__list">
-                            <a href="#" class="menu__link" onclick="closeMenu()">About</a></li>
-                        <li class="menu__list">
-                            <a href="#" class="menu__link" onclick="closeMenu()">Blog</a></li>
-                        <li class="menu__list">
-                            <a href="#" class="menu__link" onclick="closeMenu()">Pricing</a></li>
-                        <li class="menu__list">
-                            <a href="#" class="menu__link" onclick="closeMenu()">Contact Us</a></li>
-                        <li class="menu__list">
-                            <a href="#" class="menu__link" onclick="closeMenu()">Login</a></li>
-                        <li class="menu__list">
-                            <a href="features" class="menu__link" onclick="closeMenu()">Sign Up</a></li>
+                            <a href="features" class="menu__link" onclick="closeMenu()">Sign Up</a>
+                        </li>
                     </ul>
             </div>
             </div>
             </div>
         </nav>
         </section>
-        <section id="header">
-            <header>
+
+                <section id="header">
+                <header>
                     <div class="header__container">
                     <div class="header__description">
                     <div class="row">
@@ -60,15 +69,17 @@
                     <input type="button" placeholder="Your Email Address"> 
                     <button class="btn">Get Started</button>
                 </a>
+                </div>
                     <figure class="header__img--wrapper">
                     <img src="./assets/undraw_winter_designer_a-2-m7.svg" alt="illustration">
                 </figure>
-                    </div>
-                    </div>
-                    </div>
+                </div>
+                </div>     
+                </div>              
         </header>
         </section>
-        <section id="Features"> 
+
+                <section id="Features"> 
                     <div class="row">
                     <div class="features__container">
                     <h2 class="section__title">
@@ -128,31 +139,32 @@
                             <div class="checkpoint__wrapper">
                                 <div class="checkpoint__icon">
                                     <i class="fas fa-check"></i>
-                                </div>
+                            </div>
                                 <div class="checkpoint__text">  
                                     Fast
                                     <p>Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.</p>
-                                </div>
                             </div>
-                            <div class="checkpoint__wrapper">
+                            </div>
+                                <div class="checkpoint__wrapper">
                                 <div class="checkpoint__icon">
                                     <i class="fas fa-check"></i>
-                                </div>  
+                            </div>  
                                 <div class="checkpoint__text">
                                     Easy  
                                     <p>Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.</p>
-                                </div>
                             </div>
                             </div>
-                            </div>            
-                            </div> 
-                            </div>   
-                            </div>
+                        </div>
+                        </div>            
+                    </div> 
+                    </div>   
+                    </div>
                 </section>
+
                             <section id="quality">
                             <div class="row">
                             <div class="quality_container">
-                        <h2 class="section__title">
+                            <h2 class="section__title">
                                     Designed and Developed by <span class="purple">Professionals.</span>
                         </h2>     
                                 <p?>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -163,30 +175,29 @@
                                     </a>
                                 <figure class="header__img--wrapper">
                                     <img src="images/header-img.svg" alt="illustration">
-                        </figure>
-                                 
-                                </div> 
-                                </div>   
-                </section>
+                            </figure>
+                            </div> 
+                            </div>   
+                        </section>
 
                             <section id="steps">
-                                <div class="row">
-                                <div class="steps_container">
-                            <h2 class="section__title">
-                                        Easy to <span class="purple">Get Started.</span>
+                                    <div class="row">
+                                    <div class="steps_container">
+                                    <h2 class="section__title">
+                                    Easy to <span class="purple">Get Started.</span>
                             </h2>     
                                     <p?>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
                                          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
                                          <a href="#quality">
                                             <button class="btn">Sign Up</button>
-                                        </a>
-                                        <div class="steps__description">
-                                            <figure class="features__img--wrapper">
-                                            <img 
-                                            class="features__img" 
-                                            src="images/features-img.svg" 
-                                            alt="Services">
+                            </a>
+                                    <div class="steps__description">
+                                        <figure class="features__img--wrapper">
+                                        <img 
+                                        class="features__img" 
+                                        src="images/features-img.svg" 
+                                        alt="Services">
                             </figure>
                                         Register
                                         <p>Create an account with us using Google or Facebook.</p>
@@ -212,7 +223,8 @@
                             </figure>  
                                     </div> 
                                     </div>      
-                </section>
+                    </section>
+
 
                 <section id="values">
                     <div class="row">
