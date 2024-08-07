@@ -288,6 +288,8 @@ img {
     font-size: 16px;
     /* border-radius: 999px; */
 }
+
+
 /* LANDING PAGE  */
 
 .fortune__img { 
@@ -524,6 +526,58 @@ h4 {
 }
 
 
+.quality_container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 72px; 
+    display: flex;
+    /* flex-wrap: wrap;  */
+    flex-direction: row; 
+    justify-content: center;
+}
+
+.quality_description {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    padding: 0 24px;
+    font: 16px;
+}
+
+.img {
+    width: 100%;
+}
+
+
+p {
+    font-size: 16px;
+    color: #7c8ba1;
+    display: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-right: 100px;
+}
+
+.h2 {
+    align-items: left;
+}
+
+
+
+.row {
+    max-width: 1200px;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    width: 100%;
+    margin: 0 auto;
+}
 
 
 /* STEPS  */
