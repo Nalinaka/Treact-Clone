@@ -26,34 +26,21 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 12px;
+  padding: 0 16px;
 }
 
 .nav__links {
   display: flex;
   justify-content: space-between;
-  /* align-items: right; */
-  height: 100px;
-  box-sizing: border-box;
-  width: 50%;
-  /* padding: 48 124px; */
+  align-items: center;
   font-size: 14px;
   font-weight: 500;
   margin-right: 0px;
   color: #243e63;
   text-decoration: none;
-}
-
-.nav__links {
   list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 0 24px;
-  /* margin: 0 auto; */
-  color: black;
   width: 50%;
-  text-decoration: none;
 }
 
 .nav__link--anchor {
@@ -481,7 +468,7 @@ p2 {
   display: flex;
   justify-content: center;
   box-sizing: border-box;
-  text-align: center; 
+  text-align: center;
   width: 100%;
 }
 
@@ -519,10 +506,9 @@ p2 {
 
 .service {
   display: flex;
-  width: calc(100% / 3);
+  position: relative; 
+  /* width: calc(100% / 3); */
 }
-
-
 
 /* SERVICES CONTAINER  */
 
@@ -546,12 +532,12 @@ p2 {
 
 .checkpoint__wrapper {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  text-align: center;
+  /* flex-direction: row; */
+  align-items: center;
+  justify-content: center;
 }
 
-.checkpoint__text {
+/* .checkpoint__text {
   font-size: 16px;
   color: #243e63;
   display: flex;
@@ -563,7 +549,7 @@ p2 {
   margin-bottom: 50px;
   margin-top: 52px;
   padding: 32px 8px;
-}
+} */
 
 .h3 {
   display: flex;
@@ -573,17 +559,15 @@ p2 {
 
 p1 {
   font-size: 16px;
-  color: #243e63;
+  margin-top: 16px;
+  color:  #a0aec0;
+  line-height: 2;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap; 
+  margin: 16px 0px 0px;
   justify-content: center;
   box-sizing: border-box;
-  /* margin-right: 50px;
-    margin-left: 50px;
-    margin-bottom: 50px;
-    margin-top: 52px;
-    padding: 32px 8px; */
-  /* width: 33%; */
+    width: 100%;
   text-wrap: wrap;
 }
 
@@ -591,15 +575,19 @@ p1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 40px;
-  width: 40px;
+  height: 24px;
+  width: 24px;
   font-size: 40px;
   color: #6415ff;
 }
 
-
 .section__title {
   margin-top: 124px;
+}
+
+.img {
+  height: 16px;
+  width: 16px;
 }
 
 /* QUALITY */
@@ -823,4 +811,8 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.li {
+  list-style-type: none;
 }
