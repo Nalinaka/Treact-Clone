@@ -213,12 +213,12 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center; */
-  padding: 20px;
-  z-index: 2;
-  width: 50%;
-  margin-top: 100px;
-  margin-bottom: 80px;
-  flex-direction: column;
+    padding: 20px;
+    z-index: 2;
+    width: 50%;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    flex-direction: column;
 }
 
 h2 {
@@ -605,11 +605,9 @@ h4 {
 }
 
 .screenshot__img--wrapper {
-  /* padding: 120px; */
+  position: relative;
   z-index: 2;
   width: 100%;
-  /* margin-top: 100px; */
-  /* margin-bottom: 80px; */
   flex-direction: column;
 }
 
@@ -901,7 +899,11 @@ p4  {
 }
 
 
-/* PRICING */
+/* 
+
+PRICING 
+
+*/
 
 .row {
   width: 100%;
@@ -922,6 +924,81 @@ p4  {
   padding: 0 20px;
 }
 
+.plans__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.plans__three--container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.plans__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.plans__wrapper--business {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb (100 21 255);
+}
+
+
+.plan__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.plan__name {
+  font-size: 24px;
+  color: #243e63;
+  font-weight: 600;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.plan__price {
+  font-size: 24px;
+  color: #243e63;
+  font-weight: 600;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plan__about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+p {
+  font-size: 16px;
+  color: #243e63;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* box-sizing: border-box;
+  text-wrap: wrap; */
+}
 
 /* TESTIMONIALS */
 
