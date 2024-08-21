@@ -222,7 +222,7 @@ h1 {
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 48px;
   color: #1a202c;
 }
 
@@ -247,6 +247,7 @@ h2 {
   color: #6415ff;
   font-size: 48px;
   font-weight: 700;
+  /* align-items: flex-start; */
 }
 
 .purple4 {
@@ -257,9 +258,6 @@ h2 {
 .purple5 {
   color: #6415ff;
   font-size: 48px;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
 }
 
 .purple6 {
@@ -439,6 +437,7 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* margin-top: 328px; */
 }
 
 h5 {
@@ -499,8 +498,9 @@ p2 {
 
 /* KNOWN AS SERVICE */
 
-.service {
+.services {
   display: flex;
+  flex-direction: row;
   position: relative;
   /* width: calc(100% / 3); */
 }
@@ -512,11 +512,42 @@ p2 {
   flex-direction: column;
 }
 
-/* KNOWN AS SERVICES */
+/* KNOWN AS SERVICES - changed services__container to row but can't get them to bunch up */ 
 
 .services__container {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 6rem;
+}
+
+.checkpoint__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.checkpoint__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 24px;
+  width: 24px;
+  font-size: 40px;
+  color: #6415ff;
+}
+
+.services__row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .row {
@@ -525,12 +556,6 @@ p2 {
   margin: 0 auto;
 }
 
-.checkpoint__wrapper {
-  display: flex;
-  /* flex-direction: row; */
-  align-items: center;
-  justify-content: center;
-}
 
 /* .checkpoint__text {
   font-size: 16px;
@@ -548,11 +573,15 @@ p2 {
 
 p1 {
   font-size: 16px;
-  margin-top: 16px;
+  /* margin-top: 16px; */
   color: #a0aec0;
+  font-weight: 500;
   line-height: 2;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+  text-align: left;
   margin: 16px 0px 0px;
   justify-content: center;
   box-sizing: border-box;
@@ -560,18 +589,9 @@ p1 {
   text-wrap: wrap;
 }
 
-.checkpoint__icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 24px;
-  width: 24px;
-  font-size: 40px;
-  color: #6415ff;
-}
 
 .section__title {
-  margin-top: 24px;
+  margin-top: 296px;
   margin-bottom: 24px;
   text-align: left;
   font-size: 48px;
@@ -699,12 +719,18 @@ p3 {
 }
 
 .section__title1 {
-  align-items: left;
+  display: flex;
+  align-items: flex-start;
+  text-align: left; 
   font-size: 48px;
   color: #243e63;
 }
 
 /* STEPS  */
+
+.section__title--steps {
+  text-align: left;
+}
 
 .row {
   width: 100%;
@@ -714,7 +740,7 @@ p3 {
 
 .section__steps-title {
   display: flex;
-  align-items: left;
+  align-items: flex-start;
   width: 75%;
 }
 
@@ -807,6 +833,15 @@ p3 {
 /* use color rgb(100,21, 255) */
 /* border top color rgb(229, 231, 235) */
 
+.values__dept {
+  display: flex;
+}
+
+
+
+.section__title--values {
+  text-align: left;
+}
 
 .dollarsign__img--wrapper {
   padding: 20px;
@@ -886,11 +921,20 @@ p4  {
 }
 
 .values__text-dollar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
   flex-direction: column;
-  width: 50%;
+  /* margin-top: 16px; */
+}
+
+.values__text-suitcase {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 
@@ -902,33 +946,30 @@ p4  {
   width: 100%;
 }
 
-.values__text-suitcase {
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
 
 .values__text-suitcase--paragraph {
   display: flex;
   align-items: center; 
   justify-content: center; 
   flex-direction: column;
-  width: 100%;
+  width: 50%;
 }
 
 .btn__values {
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 40px;
   font: 14pxinter, system-iu;
   color: white;
-  position: relative;
+  background-color: #6415ff;
   margin-bottom: 8px;
-  margin-top: 8px;
+  margin-top: 52px;
   width: 160px;
     /* line-height: 2; */
   border-radius: 60px;
@@ -936,6 +977,7 @@ p4  {
   opacity: 1;
   transition: all 300ms ease;
 }
+
 
 /* 
 
@@ -958,22 +1000,51 @@ PRICING
 }
 
 .plan {
-  width: calc(100% / 3);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 3);
+}
+  
+
+.plan__feature {
+  font-size: 16px;
+  color: rgb(113 128 150);
+  
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: center;
+  flex-direction: column; */
+  /* box-sizing: border-box;
+  text-wrap: wrap; */
+}
+
+.plan__features--business {
+  font-size: 16px;
+  color: white; 
+  background-color: rgb (102 126 234);
+}
+
+.duration {
+  color: rgb (160 174 192);
+}
+
+
+.plan__header {
+  color: black; 
+  font-weight: 700;
+}
+/* .plans__description {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 20px;
-}
+} */
 
-.plans__description {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 
-.plans__three--container {
+.plan__border-top {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -981,14 +1052,9 @@ PRICING
   justify-content: center;
 }
 
-.plans__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 
+
+/* 
 
 .plans__wrapper--personal {
   display: flex;
@@ -1006,9 +1072,6 @@ PRICING
   text-align: center; 
 }
 
-#plans__wrapper--business {
-  background-color: rgb (102 126 234);
-}
 
 .plans__wrapper--business {
   display: flex;
@@ -1025,10 +1088,10 @@ PRICING
   padding-right: 2rem; 
   padding-top: 0.5rem;
   text-align: center; 
-}
+} */
 
 
-
+/* 
 .plans__wrapper--enterprise {
   display: flex;
   width: 100%;
@@ -1043,7 +1106,7 @@ PRICING
   padding-right: 2rem; 
   padding-top: 0.5rem;
   text-align: center; 
-}
+} */
 
 
 
@@ -1080,7 +1143,7 @@ PRICING
 
 .plan__about {
   color: rgb (226, 232, 240);
-  position: relative; 
+  /* position: absolute;  */
   /* display: flex;
   flex-direction: column;
   align-items: center;
@@ -1147,18 +1210,19 @@ PRICING
 
 
 
-p {
-  font-size: 16px;
-  color: #243e63;
+/* 
+
+TESTIMONIALS 
+
+*/
+
+.section__title--image {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  /* box-sizing: border-box;
-  text-wrap: wrap; */
 }
 
-/* TESTIMONIALS */
 
+/* .section__title--text {
+  /* display: flex; */
 
 
 
