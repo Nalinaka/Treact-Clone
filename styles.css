@@ -1006,7 +1006,7 @@ PRICING
 .plan-business {
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
+  /* flex-direction: column; */
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -1039,7 +1039,7 @@ PRICING
   text-align: center;
 }
 
-.plan__features--business {
+.plan__feature--main-business {
   font-size: 16px;
   color: white;
   background-color: rgb (102 126 234);
@@ -1417,6 +1417,7 @@ TESTIMONIALS
   justify-content: center;
   flex-direction: row;
   padding: 16px 16px;
+  position: absolute; 
 }
 
 .btn__cu {
@@ -1451,18 +1452,19 @@ TESTIMONIALS
 .footer__container {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
+  align-items: center;
+  justify-content: center; 
+  text-align: center; 
   width: 100%;
   max-width: 1400px;
 }
 
 .footer__column2 {
   display: flex;
-  align-items: flex-start;
+  /* align-items: center;
   justify-content: space-around;
   text-align: center;
-  flex-direction: row;
+  flex-direction: row; */
   width: 100%;
   max-width: 1400px;
 }
@@ -1491,7 +1493,8 @@ footer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   color: white;
 }
 
@@ -1499,6 +1502,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 
 .footer__links {
@@ -1515,6 +1519,7 @@ footer {
   color: white;
   width: calc(100% / 5);
   align-items: center;
+  justify-content: center;
   text-decoration: none;
   font-weight: 700;
   padding: 0 16px;
@@ -1526,6 +1531,7 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   padding: 0 16px;
 }
 
@@ -1534,8 +1540,8 @@ footer {
 .footer__info--wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: center;
   width: 100%;
   /* max-width: 1400px; */
   margin: 0 auto;
@@ -1560,15 +1566,15 @@ footer {
   height: auto;
   text-decoration: none;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   flex-direction: row;
 }
 
 .footer__header-image {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   color: white;
   flex-direction: row;
   text-align: center;
