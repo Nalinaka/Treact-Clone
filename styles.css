@@ -1836,13 +1836,13 @@ FOOTER INFO  - SECOND HALF OF FOOTER
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 32px;
-  margin: 0px 0px 0px 150px;
+  padding: 35px;
+  /* margin: 0px 0px 0px 150px; */
   z-index: 2;
   width: 7rem;
   cursor: pointer;
   opacity: 1;
-  height: 6rem;
+  height: 7rem;
   letter-spacing: 2em;
   transform: translateY(-5px);
 }
