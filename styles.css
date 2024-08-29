@@ -1758,6 +1758,13 @@ MAIN, PRODUCT, TEAM ETC.
 }
 
 
+.footer__link--sub:hover {
+  color: white;
+  transform: translateY(100%);
+  text-decoration: underline; 
+  cursor: pointer; 
+}
+
 /* 
 
 /* 
@@ -1828,6 +1835,7 @@ FOOTER INFO  - SECOND HALF OF FOOTER
 .footer__img--wrapper {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   padding: 32px;
   margin: 0px 0px 0px 150px;
   z-index: 2;
@@ -1836,6 +1844,7 @@ FOOTER INFO  - SECOND HALF OF FOOTER
   opacity: 1;
   height: 6rem;
   letter-spacing: 2em;
+  transform: translateY(-5px);
 }
 
 .li {
