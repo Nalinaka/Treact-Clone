@@ -1071,16 +1071,14 @@ p4 {
   width: 100%;
   display: flex;
   align-items: center;
-  /* justify-content: center; */
   flex-direction: column;
-  /* margin-top: 16px; */
 }
 
 .values__text-suitcase {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   flex-direction: column;
 }
 
@@ -1263,6 +1261,10 @@ PRICING
 }
 
 /* PLAN FEATURES Container */
+
+.plan__wrapper {
+  width: 100%;
+}
 
 .plan__feature--main {
   color: black;
@@ -1449,7 +1451,7 @@ TESTIMONIALS
   align-items: center;
   flex-direction: column;
   /* flex-wrap: wrap; */
-  width: 30%;
+  width: 100%;
 }
 
 .testimonials__rating {
@@ -1498,6 +1500,7 @@ TESTIMONIALS
   flex-direction: row;
   display: flex;
   width: 50%;
+  /* border-radius: 50%; */
 }
 
 .charlotte__img--wrapper {
@@ -1507,7 +1510,10 @@ TESTIMONIALS
   margin-top: 50px;
   margin-bottom: 80px;
   flex-direction: row;
+  height: 150px;
+  width: 150px; 
   border-radius: 50%;
+  /* transform: scale(2); */
   overflow: hidden;
   height: 8rem;
 }
@@ -1555,9 +1561,9 @@ DEVELOPERS AROUND THE WORLD
 
 .container__cu {
   display: flex;
-  width: 1400px;
+  width: 100%;
   box-sizing: border-box; 
-  border-radius: 9999px;
+  border-radius: 50%;
 }
 
 .contactus__wrapper {
