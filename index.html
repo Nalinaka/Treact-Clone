@@ -16,7 +16,6 @@
     <section id="landing">
       <nav>
         <div class="nav_container">
-          <!-- <img class="logo" src="./assets/assets/Treact Logo.svg" alt="logo"> -->
           <div class="treact__logo">
             <svg
               width="40"
@@ -42,7 +41,7 @@
           </div>
           <ul class="nav__links">
             <a
-              href="#"
+              href="#features"
               class="nav__link--anchor link__hover-effect link__hover-effect--purple"
               >About</a
             >
@@ -52,12 +51,12 @@
               >Blog</a
             >
             <a
-              href="#"
+              href="#pricing"
               class="nav__link--anchor link__hover-effect link__hover-effect--purple"
               >Pricing</a
             >
             <a
-              href="#"
+              href="#contact"
               class="nav__link--anchor link__hover-effect link__hover-effect--purple"
               >Contact Us</a
             >
@@ -66,38 +65,50 @@
               class="nav__link--anchor link__hover-effect link__hover-effect--purple"
               >Login</a
             >
-            <a href="#" class="nav__link--anchor nav__link--anchor-primary"
+            <a href="#getstarted" class="nav__link--anchor nav__link--anchor-primary"
               >Sign Up</a
             >
           </ul>
+          <button class="btn__menu" onclick="openMenu()">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="menu__backdrop">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="menu__links">
+              <li class="menu__list">
+                <a href="#" class="menu__link no cursor" onclick="closeMenu()"
+                  >About</a
+                >
+              </li>
+              <li class="menu__list">
+                <a href="#" class="menu__link no cursor" onclick="closeMenu()"
+                  >Blog</a
+                >
+              </li>
+              <li class="menu__list">
+                <a href="#pricing" class="menu__link" onclick="closeMenu()"
+                  >Pricing</a
+                >
+              </li>
+              <li class="menu__list">
+                <a href="#contact" class="menu__link" onclick="closeMenu()"
+                  >Contact Us</a
+                >
+              </li>
+              <li class="menu__list">
+                <a href="#" class="menu__link no cursor" onclick="closeMenu()"
+                  >Login</a
+                >
+              </li>
+              <li class="menu__list">
+                <a href="#getstarted" class="menu__link" onclick="closeMenu()"
+                  >Sign Up</a
+                >
+              </li>
+            </ul>
           </div>
-        <button class="btn__menu" onclick="openMenu()">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                        <div class="menu__backdrop">
-                        <button class="btn__menu btn__menu--close" onclick="closeMenu()"> 
-                            <i class="fas fa-times"></i>
-                    </button>  
-                        <ul class="menu__links">
-                            <li class="menu__list">
-                            <a href="#" class="menu__link" onclick="closeMenu()">About</a>
-                        </li>
-                            <li class="menu__list">
-                            <a href="#" class="menu__link" onclick="closeMenu()">Blog</a>
-                        </li>
-                            <li class="menu__list">
-                            <a href="#" class="menu__link" onclick="closeMenu()">Pricing</a>
-                        </li>
-                            <li class="menu__list">
-                            <a href="#" class="menu__link" onclick="closeMenu()">Contact Us</a>
-                        </li>
-                            <li class="menu__list">
-                            <a href="#" class="menu__link" onclick="closeMenu()">Login</a>
-                        </li>
-                        <li class="menu__list">
-                            <a href="features" class="menu__link" onclick="closeMenu()">Sign Up</a>
-                        </li>
-                    </ul> 
         </div>
       </nav>
     </section>
@@ -120,7 +131,7 @@
                     class="header__input"
                     type="text"
                     placeholder="Your Email Address"
-                  />
+               />
                   <button class="btn btn__header">Get Started</button>
                 </div>
                 <h3>OUR TRUSTED CUSTOMERS</h3>
@@ -142,7 +153,7 @@
       </header>
     </section>
 
-    <section id="Features">
+    <section id="features">
       <div class="features__container">
         <h4 class="section__title">
           <span class="purple">FEATURES</span>
@@ -153,7 +164,6 @@
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p2>
         <div class="features">
-
           <div class="checkpoint__wrapper">
             <div class="checkpoint__icon">
               <img src="./assets/shield_icon.svg" alt="shield_icon" />
@@ -226,7 +236,6 @@
     </section>
 
     <section id="quality">
-
       <div class="quality__container">
         <div class="quality__image">
           <div class="quality__text">
@@ -358,7 +367,7 @@
       </div>
     </section>
 
-    <section id="Pricing">
+    <section id="pricing">
       <div class="pricing__div">
         <h4 class="section__title">
           <span class="purple">PRICING</span>
@@ -434,57 +443,60 @@
       </div>
     </section>
 
-    <section id="Testimonials">
+    <section id="testimonials">
       <div class="testimonials__row">
-      <div class="section__image-row">
-        <figure class="testimonials__img--wrapper">
-          <img src="./assets/testimonials_img.svg" alt="illustration" />
-        </figure>
-      </div>
-      <div class="testmonials__details">
-        <div class="testimonials__text">
-          <h3 class="smaller__header--title">
-            <span class="purple">TESTIMONIALS</span>
-          </h3>
+        <div class="section__image-row">
+          <figure class="testimonials__img--wrapper">
+            <img src="./assets/testimonials_img.svg" alt="illustration" />
+          </figure>
         </div>
-        <h2 class="main__header--title">
-          Our Clients<span class="purple7"> Love Us.</span>
-        </h2>
-        <div class="section__title--text">
-          <p class="p__testimonials">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad
-            minim veniam.
-          </p>
-        </div>
-        <div class="testimonials__div">
-          <div class="features__testimonials">
-            <div class="testimonials__rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h3 class="h3__user">Amazing User Experience</h3>
-            <p class="p__user-exp">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia. Lorem ipsum
-              dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrud exercitation ullamco.
+        <div class="testmonials__details">
+          <div class="testimonials__text">
+            <h3 class="smaller__header--title">
+              <span class="purple">TESTIMONIALS</span>
+            </h3>
+          </div>
+          <h2 class="main__header--title">
+            Our Clients<span class="purple7"> Love Us.</span>
+          </h2>
+          <div class="section__title--text">
+            <p class="p__testimonials">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad
+              minim veniam.
             </p>
           </div>
-          <div class="charlotte">
-            <figure class="charlotte__img--wrapper">
-              <img src="./assets/Charlotee_img.avif" alt="illustration" />
-            </figure>
-            <h3 class="h3__user">Charlotte Hale Director, Delos Inc.</h3>
-            <img class="arrow" src="./assets/left and right arrow image.gif" />
+          <div class="testimonials__div">
+            <div class="features__testimonials">
+              <div class="testimonials__rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h3 class="h3__user">Amazing User Experience</h3>
+              <p class="p__user-exp">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia. Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                minim veniam, quis nostrud exercitation ullamco.
+              </p>
+            </div>
+            <div class="charlotte">
+              <figure class="charlotte__img--wrapper">
+                <img src="./assets/Charlotee_img.avif" alt="illustration" />
+              </figure>
+              <h3 class="h3__user">Charlotte Hale Director, Delos Inc.</h3>
+              <img
+                class="arrow"
+                src="./assets/left and right arrow image.gif"
+              />
+            </div>
           </div>
         </div>
-      </div>
       </div>
     </section>
 
