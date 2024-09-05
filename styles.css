@@ -1712,6 +1712,11 @@ FOOTER INFO  - SECOND HALF OF FOOTER
     display: none;
   }
 
+  .header__container {
+    flex-direction: column;
+    text-align: center;
+  }
+
   .checkpoint__wrapper:not(:last-child) {
     margin-bottom: 24px;
   }
@@ -1734,42 +1739,60 @@ FOOTER INFO  - SECOND HALF OF FOOTER
 
   .checkpoint__wrapper {
     width: 50%;
+    flex-direction: column;
   }
 
-  quality {
+  #quality {
     width: 100%;
+    flex-wrap: wrap;
   }
 
   .step__one {
     width: 100%;
+    flex-direction: column;
+    text-align: center;
   }
 
   .step__two {
     width: 100%;
+    flex-direction: column;
+    text-align: center;
   }
 
   .step__three {
     width: 100%;
+    flex-direction: column;
+    text-align: center;
   }
 
   #values {
     width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
   }
 
   #pricing {
     width: 100%;
+    flex-direction: column;
+    text-align: center;
   }
 
   #testimonials {
     width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
   }
 
   #contact {
     width: 100%;
+    flex-direction: column;
+    text-align: center;
   }
 
   #footer {
     width: 100%;
+    flex-direction: column;
+    text-align: center;
   }
 }
 
@@ -1790,6 +1813,10 @@ FOOTER INFO  - SECOND HALF OF FOOTER
     margin-bottom: 24px;
   }
 
+  .header__container {
+    flex-wrap: wrap;
+  }
+
   .btn__menu {
     display: block;
   }
@@ -1808,42 +1835,52 @@ FOOTER INFO  - SECOND HALF OF FOOTER
 
   .checkpoint__wrapper {
     width: 50%;
+    flex-direction: column;
   }
 
-  quality {
+  #quality {
     width: 100%;
+    flex-wrap: wrap;
   }
 
   .step__one {
     width: 100%;
+    flex-direction: column;
   }
 
   .step__two {
     width: 100%;
+    flex-direction: column;
   }
 
   .step__three {
     width: 100%;
+    flex-direction: column;
   }
 
   #values {
     width: 100%;
+    flex-wrap: wrap;
   }
 
   #pricing {
     width: 100%;
+    flex-direction: column;
   }
 
   #testimonials {
     width: 100%;
+    flex-wrap: wrap;
   }
 
   #contact {
     width: 100%;
+    flex-direction: column;
   }
 
   #footer {
     width: 100%;
+    flex-direction: column;
   }
 }
 
@@ -1874,6 +1911,7 @@ FOOTER INFO  - SECOND HALF OF FOOTER
 
   .header__container {
     width: 100%;
+    flex-wrap: wrap;
   }
 
   .checkpoint__wrapper {
@@ -1884,6 +1922,7 @@ FOOTER INFO  - SECOND HALF OF FOOTER
 
   #quality {
     width: 100%;
+    flex-wrap: wrap;
   }
 
   .step__one:not(:last-child) {
@@ -1906,23 +1945,26 @@ FOOTER INFO  - SECOND HALF OF FOOTER
 
   #values {
     width: 100%;
+    flex-wrap: wrap;
   }
 
   #pricing:not(:last-child) {
     width: 100%;
     display: flex;
-    flex-direction: column;
   }
 
   #testimonials {
     width: 100%;
+    flex-wrap: wrap;
   }
 
   #contact {
     width: 100%;
+    flex-direction: column;
   }
 
   #footer {
     width: 100%;
+    flex-direction: column;
   }
 }
