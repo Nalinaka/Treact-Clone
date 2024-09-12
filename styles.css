@@ -669,8 +669,11 @@ h4 {
 .screenshot__img--wrapper {
   position: relative;
   z-index: 2;
-  width: 100%;
+  width: 50%;
   flex-direction: column;
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
 }
 
 .quality__container {
@@ -682,18 +685,16 @@ h4 {
   padding-top: 172px;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
 }
 
 .quality__text {
-  width: 100%;
-  /* max-width: 1400px; */
+  width: 60%;
   letter-spacing: 1.6px;
 }
 
 .quality__image {
-  max-width: 100%;
   height: auto;
   display: flex;
   flex-direction: row;
@@ -802,7 +803,7 @@ STEPS
 
 .steps__container--text {
   display: flex;
-  align-items: right;
+  /* align-items: right; */
   flex-direction: column;
   width: 100%;
 }
@@ -1023,8 +1024,9 @@ PRICING
   border-top-color: #38b2ac;
   border-style: solid;
   margin-top: 96px;
-  margin-right: 48px;
-  width: calc(100% / 3);
+  margin-left: 20px;
+  max-width: 96%;
+  width: calc(96% / 3);
   float: left;
   text-align: center;
 }
@@ -1040,7 +1042,8 @@ PRICING
   background-color: #4c56bf;
   background-image: linear-gradient(to bottom, #4c56bf, rgb(102 126 234));
   margin-top: 96px;
-  width: calc(100% / 3);
+  max-width: 96%;
+  width: calc(96% / 3);
   float: left;
   text-align: center;
   padding: 24px 24px 24px 24px;
@@ -1057,10 +1060,10 @@ PRICING
   border-top: 12px;
   border-top-color: rgb(245 101 101);
   border-style: solid;
-  margin-left: 48px;
+  max-width: 96%;
+  margin-right: 20px;
   margin-top: 96px;
-  width: calc(100% / 3);
-  float: left;
+  width: calc(96% / 3);
   text-align: center;
 }
 
@@ -1141,8 +1144,7 @@ PRICING
 .plan__wrapper {
   width: 100%;
   display: flex;
-  padding: 0px 48px 48px 32px;
-  /* margin: 32px;  */
+  gap: 24px;
 }
 
 .plan__feature--main {
@@ -2004,8 +2006,12 @@ RESPONSIVENESS OF SITE, PHONES, TABLETS ETC. @MEDIA
 
 }
 
-/* SMALL PHONES, LARGE SMARTPHONES 768PX
-ONLY ISSUE IS THE BUTTONS GET STARTED AND EMAIL ADDRESS */
+/* 
+
+***SMALL PHONES, LARGE SMARTPHONES 768PX***
+
+
+ */
 
 @media (max-width: 768px) {
   .nav__links {
@@ -2022,6 +2028,13 @@ ONLY ISSUE IS THE BUTTONS GET STARTED AND EMAIL ADDRESS */
     text-align: center;
   }
 
+  .input {
+    padding: 20px 0px 20px 32px;
+  }
+
+  .header__image {
+    width: 100%;
+  }
 
   .btn__menu {
     display: block;
@@ -2064,6 +2077,19 @@ ONLY ISSUE IS THE BUTTONS GET STARTED AND EMAIL ADDRESS */
     align-items: center;
     margin-left: 15px; 
   }
+
+  .purple2 {
+    flex-direction: row; 
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 16px;
+    color: rgb(160 174 192);
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    color: #6415ff;
+    }
+
 
   .winter__designer--wrapper {
     width: 100%;
@@ -2134,6 +2160,11 @@ ONLY ISSUE IS THE BUTTONS GET STARTED AND EMAIL ADDRESS */
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+  }
+
+  .plan__wrapper {
+    flex-direction: column;
+    align-items: center;
   }
 
   /* TESTIMONIALS  */
@@ -2299,11 +2330,12 @@ ONLY ISSUE IS THE BUTTONS GET STARTED AND EMAIL ADDRESS */
   }
 }
 
-/* SMALL PHONES, MOBILES 496px */
+/* 
 
-/* first paragraph, two buttons get started and email address, 
-QUALITY IMAGE, QUALITY CONTAINER CENTERING, STEPS IMAGE, 
-CONTACT US button, FOOTER  */
+***SMALL PHONES, MOBILES 496px***
+***SMALL PHONES, MOBILES 496px***
+
+/*   */
 
 @media (max-width: 496px) {
 
@@ -2321,6 +2353,14 @@ CONTACT US button, FOOTER  */
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+
+  .header__image {
+    width: 100%;
+  }
+
+  .input {
+    padding: 20px 0px 20px 32px;
   }
 
 
@@ -2359,10 +2399,17 @@ CONTACT US button, FOOTER  */
   }
 
   .purple2 {
-    font-size: 30px; 
     flex-direction: row; 
     font-weight: 700;
-  }
+    font-size: 30px;
+    margin-top: 16px;
+    color: rgb(160 174 192);
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    color: #6415ff;
+    }
+  
 
   .nav__container {
     display: flex;
@@ -2380,16 +2427,7 @@ CONTACT US button, FOOTER  */
   .header__input--wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .btn__header {
-    flex-wrap: wrap; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
   }
 
   p {
@@ -2408,8 +2446,11 @@ CONTACT US button, FOOTER  */
     padding: 20px 20px 20px 20px; 
     width: 80%;
     display: flex;
-    align-items: center;  
+    flex-wrap: wrap; 
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;  
   }
   
   .header__input {
@@ -2430,10 +2471,6 @@ CONTACT US button, FOOTER  */
 
   }
 
-
-  .header__input--wrapper {
-    flex-direction: column;
-  }
 
   h3 {
     margin: 0px; 
@@ -2486,6 +2523,7 @@ CONTACT US button, FOOTER  */
 
   .features__container {
     width: 100%;
+    align-items: center;
   }
 
   h5 {
@@ -2495,14 +2533,14 @@ CONTACT US button, FOOTER  */
     justify-content: center;
     align-items: center;
     font-weight: 700;
-    margin: 16px 0px; 
-    margin-left: 92px; 
+    margin: 16px 16px; 
+    margin-left: 48px; 
     display: inline-block;
   }
 
   .purple1 {
     font-size: 24px; 
-    margin-right: 100px; 
+    margin-right: 120px; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2525,6 +2563,7 @@ CONTACT US button, FOOTER  */
     justify-content: center;
     text-align: center;
     width: 100%;
+    margin-bottom: 20px; 
 }
 
   .quality__title {
@@ -2542,7 +2581,7 @@ CONTACT US button, FOOTER  */
   }
 
   .purple2 {
-    font-size: 18px;
+    font-size: 30px;
     margin-top: 16px;
     color: rgb(160 174 192);
     font-weight: 700;
@@ -2553,10 +2592,12 @@ CONTACT US button, FOOTER  */
 
   .p3 {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    max-width: 550px;
+    margin-bottom: 20px;
+    width: 100%;
   }
 
 
@@ -2564,6 +2605,7 @@ CONTACT US button, FOOTER  */
     width: 100%;
     padding-top: 32px; 
     display: flex;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
   }
@@ -2574,6 +2616,14 @@ CONTACT US button, FOOTER  */
     width: 100%; 
     height: 100%;
     justify-content: center;
+    flex-direction: column;
+  }
+
+  .steps__container--text {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   .section__title--steps {
@@ -2615,6 +2665,10 @@ CONTACT US button, FOOTER  */
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 2.25rem;
+    font-weight: 600;
+    line-height: 1;
+    box-sizing: border-box;
   }
 
   .onetwothree {
@@ -2805,7 +2859,7 @@ CONTACT US button, FOOTER  */
 
   p {
     font-size: 16px;
-    width: 90%;
+    /* width: 90%; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2814,7 +2868,9 @@ CONTACT US button, FOOTER  */
   }
 
   .plan__wrapper {
+    display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .plan-personal {
@@ -2877,7 +2933,7 @@ CONTACT US button, FOOTER  */
 
   /* CONTACT  */
 
-  contact {
+  #contact {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
