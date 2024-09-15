@@ -983,6 +983,7 @@ p4 {
   transition: all 300ms ease;
 }
 
+
 /* 
 
 PRICING 
@@ -2016,11 +2017,11 @@ RESPONSIVENESS OF SITE, PHONES, TABLETS ETC. @MEDIA
   .btn__header {
     position: relative;
     margin-bottom: 80px;
-    margin-right: 130px;
+    /* margin-right: 130px; */
     border-radius: 40px;
     font-size: 16px;
-    padding: 20px 20px 20px 20px;
-    width: 80%;
+    /* padding: 20px 20px 20px 20px;
+    width: 80%; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2036,7 +2037,6 @@ RESPONSIVENESS OF SITE, PHONES, TABLETS ETC. @MEDIA
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 15px;
   }
 
   .purple2 {
@@ -2317,10 +2317,6 @@ RESPONSIVENESS OF SITE, PHONES, TABLETS ETC. @MEDIA
     width: 100%;
   }
 
-  .input {
-    padding: 20px 0px 20px 32px;
-  }
-
   h1 {
     font-size: 24px;
     margin-left: 20px;
@@ -2381,9 +2377,10 @@ RESPONSIVENESS OF SITE, PHONES, TABLETS ETC. @MEDIA
   }
 
   .header__input--wrapper {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 
   p {
@@ -2393,14 +2390,17 @@ RESPONSIVENESS OF SITE, PHONES, TABLETS ETC. @MEDIA
     width: 100%;
   }
 
+  .input {
+    padding: 20px 0px 20px 40px;
+  }
+
   .btn__header {
-    position: relative;
-    margin-bottom: 80px;
-    margin-right: 130px;
+    position: absolute;
+    padding: 10x 16px 10px; 
+    margin-top: 4px;
+    margin-left: 4px;
     border-radius: 40px;
     font-size: 16px;
-    padding: 20px 20px 20px 20px;
-    width: 80%;
     display: flex;
     flex-wrap: wrap;
     display: flex;
@@ -2412,14 +2412,13 @@ RESPONSIVENESS OF SITE, PHONES, TABLETS ETC. @MEDIA
   .header__input {
     border-radius: 40px;
     font-size: 16px;
-    margin-left: 20px;
+    margin: 20px 20px 20px 20px;
   }
 
   .btn {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-left: 15px;
+    align-items: center; 
   }
 
   .winter__designer--wrapper {
@@ -2462,7 +2461,7 @@ RESPONSIVENESS OF SITE, PHONES, TABLETS ETC. @MEDIA
     font-size: 15px;
   }
 
-  p2 {
+  .p2 {
     width: 70%;
     font-size: 16px;
     box-sizing: border-box;
@@ -2475,25 +2474,28 @@ RESPONSIVENESS OF SITE, PHONES, TABLETS ETC. @MEDIA
   }
 
   .features__container {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     align-items: center;
   }
 
   h5 {
-    width: 80%;
-    font-size: 24px;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+    flex-direction: column;
     font-weight: 700;
     margin: 16px 16px;
-    margin-left: 48px;
-    display: inline-block;
+    font-size: 48px;
+    color: #243e63;
+    margin-bottom: 16px;
+    box-sizing: border-box;
   }
 
   .purple1 {
     font-size: 24px;
-    margin-right: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2507,6 +2509,15 @@ RESPONSIVENESS OF SITE, PHONES, TABLETS ETC. @MEDIA
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
+  }
+
+  .btn__values--container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 36px; 
+    margin-left: 224px;
   }
 
   .screenshot__img--wrapper {
@@ -2543,12 +2554,11 @@ RESPONSIVENESS OF SITE, PHONES, TABLETS ETC. @MEDIA
     color: #6415ff;
   }
 
-  .p3 {
+  p3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
     margin-bottom: 20px;
     width: 100%;
   }
@@ -2664,8 +2674,6 @@ RESPONSIVENESS OF SITE, PHONES, TABLETS ETC. @MEDIA
     width: 60%;
     display: flex;
     flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .values__container {
@@ -2689,11 +2697,12 @@ RESPONSIVENESS OF SITE, PHONES, TABLETS ETC. @MEDIA
     align-items: center;
   }
 
-  .p4 {
+  p4 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
 
   .values__img--wrapper {
@@ -2780,7 +2789,8 @@ RESPONSIVENESS OF SITE, PHONES, TABLETS ETC. @MEDIA
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 32px;
+    margin-top: 24px;
+    margin-right: 224px;
   }
 
   /* PRICING  */
@@ -2903,7 +2913,6 @@ RESPONSIVENESS OF SITE, PHONES, TABLETS ETC. @MEDIA
   }
 
   .header__title--cu {
-    margin-top: 96px;
     font-size: 16px;
     width: 100%;
     flex-direction: column;
@@ -2916,6 +2925,7 @@ RESPONSIVENESS OF SITE, PHONES, TABLETS ETC. @MEDIA
     justify-content: space-evenly;
     text-align: center;
     margin-bottom: 32px;
+    margin-left: 72px; 
   }
 
   .btn__cu {
@@ -2923,10 +2933,10 @@ RESPONSIVENESS OF SITE, PHONES, TABLETS ETC. @MEDIA
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
-    margin-top: 72px;
+    margin-top: 102px;
     width: 180px;
     padding: 20px 20px;
-    margin: 92px 16px 92px 16px;
+    margin-left: 72px; 
     gap: 10rem;
   }
 
