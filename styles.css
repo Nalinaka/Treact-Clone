@@ -2474,6 +2474,7 @@ RESPONSIVENESS OF SITE, PHONES, TABLETS ETC. @MEDIA
     flex-direction: column;
     width: 100%;
     align-items: center;
+    margin-top: 0px;
   }
 
   h5 {
@@ -2491,7 +2492,6 @@ RESPONSIVENESS OF SITE, PHONES, TABLETS ETC. @MEDIA
   }
 
   .purple1 {
-    font-size: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
