@@ -2130,6 +2130,10 @@ RESPONSIVENESS OF SITE, PHONES, TABLETS ETC. @MEDIA
     align-items: center;
   }
 
+  .plan-business {
+    padding: 24px 0px 24px 0px;
+  }
+
   /* TESTIMONIALS  */
 
   .testimonials__row {
@@ -2457,16 +2461,14 @@ RESPONSIVENESS OF SITE, PHONES, TABLETS ETC. @MEDIA
     font-size: 15px;
   }
 
-  .p2 {
+  p2 {
     width: 70%;
     font-size: 16px;
-    box-sizing: border-box;
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     padding: 0px;
-    margin-left: 74px;
   }
 
   .features__container {
@@ -2481,21 +2483,22 @@ RESPONSIVENESS OF SITE, PHONES, TABLETS ETC. @MEDIA
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 24px;
     flex-direction: column;
     font-weight: 700;
     margin: 16px 16px;
-    font-size: 48px;
+    font-size: 36px;
     color: #243e63;
-    margin-bottom: 16px;
     box-sizing: border-box;
+    width: 70%;
+    padding: 12px 12px 12px 12px; 
   }
 
   .purple1 {
+    font-weight: 700; 
+    font-size: 36px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 12px;
   }
 
   /* QUALITY  */
@@ -2505,6 +2508,7 @@ RESPONSIVENESS OF SITE, PHONES, TABLETS ETC. @MEDIA
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
+    padding: 104px 0px 0px 0px;
   }
 
   .btn__values--container {
@@ -2514,6 +2518,33 @@ RESPONSIVENESS OF SITE, PHONES, TABLETS ETC. @MEDIA
     justify-content: center;
     margin-top: 36px; 
     margin-left: 224px;
+  }
+
+  .btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .quality__btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 32px;
+    margin-left: 0px;
+    background-color: #6415ff;
+    position: absolute;
+    padding: 8px 16px;
+    border-radius: 40px;
+    color: #f7fafc;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 300ms ease;
+    margin-top: 424px;
   }
 
   .screenshot__img--wrapper {
@@ -2532,31 +2563,53 @@ RESPONSIVENESS OF SITE, PHONES, TABLETS ETC. @MEDIA
     align-items: center;
   }
 
-  .h2 {
+  h2 {
     display: inline-block;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    flex-direction: column;
+    text-align: center;
+    flex-direction: row;
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 22px; 
   }
+
+  .purple {
+    margin-bottom: 16px; 
+  }
+
+
 
   .purple2 {
     font-size: 30px;
     margin-top: 16px;
     color: rgb(160 174 192);
-    font-weight: 700;
+    font-weight: 900;
     justify-content: center;
     align-items: center;
     color: #6415ff;
   }
 
-  p3 {
+  .p3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
     width: 100%;
+  }
+
+  .quality__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    letter-spacing: 0;
+
   }
 
   .quality__image {
@@ -2571,7 +2624,6 @@ RESPONSIVENESS OF SITE, PHONES, TABLETS ETC. @MEDIA
   /* STEPS */
 
   .steps__container {
-    width: 100%;
     height: 100%;
     justify-content: center;
     flex-direction: column;
@@ -2593,18 +2645,18 @@ RESPONSIVENESS OF SITE, PHONES, TABLETS ETC. @MEDIA
 
   .steps__img--wrapper {
     width: 100%;
+    padding: 0px 0px; 
     justify-content: center;
     align-items: center;
+  }
+
+  .purple4 {
+    color: #6415ff;
+    font-size: 30px;
+    font-weight: 900;
   }
 
   .img {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2650,8 +2702,8 @@ RESPONSIVENESS OF SITE, PHONES, TABLETS ETC. @MEDIA
     max-width: 300px;
     display: flex;
     flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
+    align-items: center;
+    justify-content: center;
     width: 100%;
   }
 
@@ -2659,8 +2711,8 @@ RESPONSIVENESS OF SITE, PHONES, TABLETS ETC. @MEDIA
     max-width: 300px;
     display: flex;
     flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
+    align-items: center;
+    justify-content: center;
     width: 100%;
   }
 
@@ -2686,7 +2738,7 @@ RESPONSIVENESS OF SITE, PHONES, TABLETS ETC. @MEDIA
     align-items: center;
   }
 
-  .h2 {
+  h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2699,6 +2751,10 @@ RESPONSIVENESS OF SITE, PHONES, TABLETS ETC. @MEDIA
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+
+  .purple5 {
+    font-size: 30px; 
   }
 
   .values__img--wrapper {
@@ -2796,8 +2852,9 @@ RESPONSIVENESS OF SITE, PHONES, TABLETS ETC. @MEDIA
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    text-align: center;
     font-weight: 700;
+    width: 100%;
   }
 
   .h5 {
@@ -2807,12 +2864,11 @@ RESPONSIVENESS OF SITE, PHONES, TABLETS ETC. @MEDIA
     align-items: center;
     font-weight: 700;
     font-size: 24px;
-    margin-left: 92px;
     display: inline-block;
   }
 
   .purple6 {
-    font-size: 18px;
+    font-size: 36px;
   }
 
   p {
@@ -2821,7 +2877,6 @@ RESPONSIVENESS OF SITE, PHONES, TABLETS ETC. @MEDIA
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 14px;
   }
 
   .plan__wrapper {
@@ -2831,18 +2886,21 @@ RESPONSIVENESS OF SITE, PHONES, TABLETS ETC. @MEDIA
   }
 
   .plan-personal {
-    margin-left: 40px;
     width: 80%;
+    margin-top: 32px;
+    margin: 0 auto; 
   }
 
   .plan-business {
-    margin-left: 40px;
     width: 80%;
+    margin-top: 32px;
+    margin: 0 auto;
   }
 
   .plan-enterprise {
-    margin-left: 40px;
     width: 80%;
+    margin-top: 32px;
+    margin: 0 auto;
   }
 
   .plan-personal,
@@ -2853,6 +2911,15 @@ RESPONSIVENESS OF SITE, PHONES, TABLETS ETC. @MEDIA
   }
 
   /* TESTIMONIALS  */
+
+  .section__image-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+  }
 
   .testimonials__row {
     width: 90%;
@@ -2872,6 +2939,11 @@ RESPONSIVENESS OF SITE, PHONES, TABLETS ETC. @MEDIA
     flex-direction: column;
     align-items: center;
     text-align: center;
+    font-weight: 900;
+  }
+
+  .purple7 {
+    font-size: 30px; 
   }
 
   .p__testimonials {
@@ -2981,6 +3053,7 @@ RESPONSIVENESS OF SITE, PHONES, TABLETS ETC. @MEDIA
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    line-height: 1.5;
   }
 
   .footer__info {
