@@ -581,6 +581,7 @@ p1 {
   flex-direction: row;
   align-items: center;
   text-align: center;
+  max-width: 300px; 
 }
 
 .features__container {
@@ -901,7 +902,6 @@ VALUES
   height: 100%;
   padding: 72px;
   padding-top: 4px;
-  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
