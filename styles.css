@@ -3004,11 +3004,11 @@ RESPONSIVENESS OF SITE, PHONES, TABLETS ETC. @MEDIA
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
-    margin-top: 102px;
     width: 180px;
     padding: 20px 20px;
     margin-left: 10px; 
     gap: 10rem;
+    margin-top: 94px; 
   }
 
   /* FOOTER  */
